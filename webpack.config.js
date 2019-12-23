@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebappWebpackPlugin = require('webapp-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractCssChunksPlugin = require('extract-css-chunks-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsWebpack = require('optimize-css-assets-webpack-plugin');
@@ -77,14 +77,7 @@ const config = {
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
         // To clean dist folder before every build
-        new CleanWebpackPlugin({
-            // Removal of files.
-            dry: true,
-            // clean unused webpack assets
-            // cleanStaleWebpackAssets: true,
-
-            cleanOnceBeforeBuildPatterns: ["./dist"]
-        }),
+        new CleanWebpackPlugin(['dist'], {}),
 
         // Make chunks of css files.
         new ExtractCssChunksPlugin({

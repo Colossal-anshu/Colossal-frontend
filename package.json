@@ -1,5 +1,5 @@
 {
-  "name": "Colossal-frontend",
+  "name": "Colossal",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,9 @@
     "url": "https://github.com/Colossal-anshu/Colossal-frontend/issues"
   },
   "homepage": "https://github.com/Colossal-anshu/Colossal-frontend#readme",
+  "browserslist": [
+    "defaults"
+  ],
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
@@ -26,8 +29,9 @@
     "babel": "^6.23.0",
     "babel-loader": "^8.0.6",
     "clean-jsdoc-theme": "^2.2.8",
-    "clean-webpack-plugin": "^3.0.0",
+    "clean-webpack-plugin": "^0.1.19",
     "concurrently": "^5.0.2",
+    "css-loader": "^3.4.0",
     "cssnano": "^4.1.10",
     "extract-css-chunks-webpack-plugin": "^4.7.1",
     "html-webpack-plugin": "^3.2.0",
@@ -36,6 +40,7 @@
     "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router": "^5.1.2",
@@ -44,7 +49,7 @@
     "redux-thunk": "^2.3.0",
     "rucksack-css": "^1.0.2",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.1.1",
+    "style-loader": "^0.23.1",
     "sugarss": "^2.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webapp-webpack-plugin": "^2.7.1",
