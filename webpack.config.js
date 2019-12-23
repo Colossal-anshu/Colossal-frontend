@@ -103,7 +103,7 @@ const config = {
         new HtmlWebpackPlugin({
             chunks: ["app"],
             title : "Colossal",
-            filename : "app.html",
+            filename : "index.html",
             template : "assets/templates/app.html",
             minify : {
                 removeComments : true,
