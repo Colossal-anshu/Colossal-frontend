@@ -1,0 +1,8 @@
+# Ignoring output files
+./dist/**
+
+# Ignoring node modules
+node_modules/**
+
+# Ignore MacOs files
+**/.DS_Store
