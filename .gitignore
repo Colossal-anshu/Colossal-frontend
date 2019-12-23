@@ -1,5 +1,5 @@
 # Ignoring output files
-./dist/**
+dist/**
 
 # Ignoring node modules
 node_modules/**
