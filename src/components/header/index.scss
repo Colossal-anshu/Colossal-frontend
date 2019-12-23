@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    top: 0;
+
+    .header {
+        border-radius: 2rem;
+        max-width: $max-width;
+
+        img{
+            filter: brightness(0);
+        }
+
+        .item{
+            padding: 0 0.625rem;
+            display: inline-block;
+        }
+    }
+
+    .search{
+        padding: 0.4rem 1rem;
+        background: rgba(255,255,255,.5);
+        border-radius: 1rem;
+        width: 15rem;
+    }
+}

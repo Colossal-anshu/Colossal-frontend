@@ -1,0 +1,6 @@
+@mixin same-height-width($class-name, $dimension){
+    .#{$class-name}{
+        height: ($dimension/16) * 1rem;
+        width: ($dimension/16) * 1rem;
+    }
+}

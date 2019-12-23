@@ -1,0 +1,13 @@
+@include same-height-width('sm-icon', 8);
+@include same-height-width('md-icon', 16);
+@include same-height-width('lg-icon', 24);
+@include same-height-width('xl-icon', 32);
+@include same-height-width('xxl-icon', 64);
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}

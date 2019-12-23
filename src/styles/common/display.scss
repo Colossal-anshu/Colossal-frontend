@@ -1,0 +1,32 @@
+.i-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+
+    &.center{
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.col{
+        flex-direction: column;
+    }
+
+    &.center-j{
+        justify-content: center;
+    }
+
+    &.center-a{
+        align-items: center;
+    }
+}
+
+.none {
+    display: none;
+}

@@ -1,0 +1,9 @@
+$max-spacing: 13;
+
+@mixin spacing ($spacing-name, $attribute) {
+    @for $i from 1 to $max-spacing{
+        .#{$spacing-name}-#{$i}{
+            #{$attribute}: ($i/16) *1rem
+        }
+    }
+}
