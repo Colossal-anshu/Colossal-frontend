@@ -8,11 +8,6 @@ class Main extends React.Component{
 
     }
 
-    componentDidMount(){
-        console.log(this.props.test);
-    }
-
-
     render(){
         return(
             <div className="main">

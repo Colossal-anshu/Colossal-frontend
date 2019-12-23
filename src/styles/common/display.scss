@@ -25,6 +25,26 @@
     &.center-a{
         align-items: center;
     }
+
+    &.end-a{
+        align-items: flex-end;
+    }
+
+    &.end-j{
+        justify-content: flex-end;
+    }
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
+.flex-3{
+    flex: 3;
 }
 
 .none {

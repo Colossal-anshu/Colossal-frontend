@@ -9,11 +9,11 @@ class Index extends React.Component{
 
     render(){
 
-        const { inputDivClass, inputClass, inputGroupClass, iconClass, type, reverse, iconComponent, placeholder } = this.props
+        const { inputDivClass, inputClass, inputGroupClass, iconClass, type, reverse, iconComponent, placeholder, inputId, onFocus, onBlur } = this.props
         return(
             <div className={"input-group flex center " + inputGroupClass + " " + classname({'reverse': reverse})}>
                 <div className={"input-div " + inputDivClass}>
-                    <input type={type} className={"input w-100 " + inputClass} placeholder={placeholder}/>
+                    <input type={type} className={"input w-100 " + inputClass} placeholder={placeholder} id={inputId} onFocus={onFocus} onBlur={onBlur}/>
                 </div>
                 <div className={"icons " + iconClass}>
                     {iconComponent}
@@ -31,7 +31,10 @@ Index.defaultProps = {
     iconClass: '',
     iconComponent: <span></span>,
     inputDivClass: '',
-    placeholder: 'Search'
+    placeholder: 'Search',
+    inputId: '',
+    onFocus: ()=>null,
+    onBlur: ()=>null
 }
 
 Index.propTypes = {

@@ -67,7 +67,7 @@ const config = {
             {
                 // To comiple sass and css files.
                 test: /\.(sass|scss)$/,
-                use: ['style-loader', ExtractCssChunksPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+                use: ['style-loader', ExtractCssChunksPlugin.loader, 'css-loader', 'postcss-loader',  'resolve-url-loader', 'sass-loader']
             }
         ]
     },

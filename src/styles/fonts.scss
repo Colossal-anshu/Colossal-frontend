@@ -1,0 +1,15 @@
+@mixin font($name, $url) {
+    @font-face {
+        font-family: $name;
+        src: url($url);
+        font-weight: normal;
+    }
+}
+
+@include font('ibm-regular', '../../assets/static/fonts/IBM_Plex_Serif/ibm-medium.ttf');
+@include font('ibm-bold', '../../assets/static/fonts/IBM_Plex_Serif/ibm-bold.ttf');
+@include font('ibm-thin', '../../assets/static/fonts/IBM_Plex_Serif/ibm-thin.ttf');
+
+@include font('muli-light', '../../assets/static/fonts/Muli/Muli-Light.ttf');
+@include font('muli-regular', '../../assets/static/fonts/Muli/Muli-Regular.ttf');
+@include font('muli-bold', '../../assets/static/fonts/Muli/Muli-Bold.ttf');
