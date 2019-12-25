@@ -21,9 +21,9 @@ class Index extends React.Component{
         return(
             <div className='item'>
                 <SwitchIcon 
-                    First_icon = {MdChatBubbleOutline}
+                    FirstIcon = {MdChatBubbleOutline}
                     first_icon_class = "md-icon pointer black-icon"
-                    Second_icon = {MdChat}
+                    SecondIcon = {MdChat}
                     second_icon_class = "md-icon pointer black-icon"
                     change = {chat}
                 />

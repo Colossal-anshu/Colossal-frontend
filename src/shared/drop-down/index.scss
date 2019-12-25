@@ -1,0 +1,38 @@
+.drop-box-container {
+    position: absolute;
+    min-width: 15rem;
+    top: 2.5rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+
+    &.left {
+        left: 0;
+    }
+
+    &.right {
+        right: 0;
+    }
+
+    .drop-box-ul {
+        list-style-type: none;
+    }
+
+    .drop-box-li a {
+        padding: 0.5rem 1.2rem;
+        background: $black;
+        color: $white;
+        
+        &:hover{
+            color: $primary;
+            fill: $primary;
+            background: $black-100;
+        }
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+
+}

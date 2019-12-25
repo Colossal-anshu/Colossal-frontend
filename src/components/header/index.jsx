@@ -12,7 +12,7 @@ class Index extends React.Component{
     render(){
         return(
             <header className="container w-100 p-12">
-                <div className="header primary-bg w-100 p-10 flex center-a">
+                <div className="header primary-bg w-100 p-5 flex center-a">
                     <div className="item">
                         <Link to="/">
                             <img src={Logo} alt="Colossal Logo" className="lg-icon"/>

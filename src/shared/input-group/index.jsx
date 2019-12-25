@@ -2,7 +2,7 @@ import React from 'react';
 import classname from 'classnames';
 import PropTypes from 'prop-types';
 
-class Index extends React.Component{
+class InputGroup extends React.Component{
     constructor(props){
         super(props)
     }
@@ -23,7 +23,7 @@ class Index extends React.Component{
     }
 }
 
-Index.defaultProps = {
+InputGroup.defaultProps = {
     type: 'text',
     reverse: false,
     inputGroupClass: '',
@@ -37,7 +37,7 @@ Index.defaultProps = {
     onBlur: ()=>null
 }
 
-Index.propTypes = {
+InputGroup.propTypes = {
     type: PropTypes.string,
     reverse: PropTypes.bool,
     inputGroupClass: PropTypes.string,
@@ -48,4 +48,4 @@ Index.propTypes = {
     placeholder: PropTypes.string
 };
 
-export default Index;
+export default InputGroup;

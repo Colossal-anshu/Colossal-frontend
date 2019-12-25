@@ -21,9 +21,9 @@ class Index extends React.Component{
         return(
             <div className='item'>
                 <SwitchIcon 
-                    First_icon = {MdNotificationsNone}
+                    FirstIcon = {MdNotificationsNone}
                     first_icon_class = "md-icon pointer black-icon"
-                    Second_icon = {MdNotificationsActive}
+                    SecondIcon = {MdNotificationsActive}
                     second_icon_class = "md-icon pointer black-icon"
                     change = {notification}
                 />

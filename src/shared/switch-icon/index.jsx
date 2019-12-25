@@ -1,30 +1,42 @@
 import React from 'react';
 import classname from 'classnames';
+import PropTypes from 'prop-types';
 
-class Switch extends React.Component{
+class SwitchIcon extends React.Component{
     constructor(props){
         super(props)
 
     }
 
     render(){
-        const {First_icon, Second_icon, first_icon_class, second_icon_class, change, container_class} = this.props;
+        const {FirstIcon, SecondIcon, first_icon_class, second_icon_class, change, container_class, onClickIcon} = this.props;
         return(
             <div className={container_class}>
-                <First_icon className={first_icon_class + ' ' + classname({ 'none': change})}/>
-                <Second_icon className={second_icon_class + ' ' + classname({ 'none': !change})}/>
+                <FirstIcon onClick={onClickIcon} className={first_icon_class + ' ' + classname({ 'none': change})}/>
+                <SecondIcon onClick={onClickIcon} className={second_icon_class + ' ' + classname({ 'none': !change})}/>
             </div>
         )
     }
 }
 
-Switch.defaultProps = {
+SwitchIcon.defaultProps = {
     change: false,
-    First_icon: '',
+    FirstIcon: '',
     first_icon_class: '',
-    Second_icon: '',
+    SecondIcon: '',
     second_icon_class: '',
-    container_class: ''
-}
+    container_class: '',
+    onClickIcon: () => null,
+};
 
-export default Switch
+SwitchIcon.propTypes = {
+    change: PropTypes.bool,
+    FirstIcon: PropTypes.func,
+    first_icon_class: PropTypes.string,
+    SecondIcon: PropTypes.func,
+    second_icon_class: PropTypes.string,
+    container_class: PropTypes.string,
+    onClickIcon: PropTypes.func
+};
+
+export default SwitchIcon;
