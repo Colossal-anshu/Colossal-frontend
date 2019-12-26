@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './header';
+import CoverPhoto from './cover-photo';
+import ProfileBar from './profile-bar';
 import { connect } from 'react-redux';
 
 class Main extends React.Component{
@@ -12,6 +14,8 @@ class Main extends React.Component{
         return(
             <div className="main">
                 <Header />
+                <CoverPhoto />
+                <ProfileBar />
             </div>
         )
     }

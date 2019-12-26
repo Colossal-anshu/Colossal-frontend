@@ -11,7 +11,7 @@ class Index extends React.Component{
 
     render(){
         return(
-            <header className="container w-100 p-12">
+            <header className="container w-100">
                 <div className="header primary-bg w-100 p-5 flex center-a">
                     <div className="item">
                         <Link to="/">
