@@ -1,11 +1,15 @@
 import "./styles/main.scss"
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './components/main.jsx';
 import history from "./scripts/history";
-import { Router } from 'react-router-dom'
+import { Router, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import { APP_URL, LOGIN_URL } from './scripts/url'
+
+// Components
+import Main from './components/main.jsx';
+import Login from './login/login';
 
 class App extends React.Component{
     constructor(props){
@@ -15,7 +19,10 @@ class App extends React.Component{
     render(){
         return(
             <Router history={history}>
-                <Main />
+                <Switch>
+                    <Route path={APP_URL} component={Main} />
+                    <Route path={LOGIN_URL} component={Login} />
+                </Switch>
             </Router>
         )
     }

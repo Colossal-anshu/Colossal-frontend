@@ -46,6 +46,7 @@ class Index extends React.Component{
                 <DropDown
                     visible={menu_open}
                     position='right'
+                    drop_box_class = 'z-max'
                     list={[
                         {
                             title: 'Profile',

@@ -19,7 +19,7 @@ class CoverPhoto extends React.Component{
 
     render(){
         return(
-            <div className='cover-photo-container' id='cover-photo-container'>
+            <div className='cover-photo-container z--1' id='cover-photo-container'>
                 {/* <img src={CoverImage} alt="cover photo"/> */}
             </div>
         )
